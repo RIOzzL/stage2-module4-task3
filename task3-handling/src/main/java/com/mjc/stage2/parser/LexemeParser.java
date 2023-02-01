@@ -16,6 +16,10 @@ public class LexemeParser extends AbstractTextParser {
 
     private static final Pattern WORD_PATTER = Pattern.compile(WORD_REGEX);
 
+    public LexemeParser(AbstractTextParser nextParser) {
+        super(nextParser);
+    }
+
     @Override
     public void parse(AbstractTextComponent abstractTextComponent, String string) {
         if (abstractTextComponent.getComponentType() == SENTENCE) {

@@ -3,7 +3,9 @@ package com.mjc.stage2.entity;
 import com.mjc.stage2.Observable;
 import com.mjc.stage2.Observer;
 import com.mjc.stage2.event.RectangleEvent;
+import com.mjc.stage2.impl.RectangleObserver;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Rectangle implements Observable {
@@ -17,6 +19,9 @@ public class Rectangle implements Observable {
         this.id = id;
         this.sideA = sideA;
         this.sideB = sideB;
+        observers = new ArrayList<>();
+        observers.add(new RectangleObserver());
+        notifyObserver();
     }
 
     public int getId() {
