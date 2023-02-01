@@ -1,8 +1,8 @@
-package com.mjc.stage2.reader.impl;
+package com.mjc.stage2.entity.reader.impl;
 
 
 import com.mjc.stage2.exception.HandlingException;
-import com.mjc.stage2.reader.DataReader;
+import com.mjc.stage2.entity.reader.DataReader;
 import com.mjc.stage2.validator.impl.FileValidatorImpl;
 
 import java.io.IOException;

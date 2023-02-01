@@ -1,4 +1,4 @@
-package com.mjc.stage2.reader;
+package com.mjc.stage2.entity.reader;
 
 
 import com.mjc.stage2.exception.HandlingException;
