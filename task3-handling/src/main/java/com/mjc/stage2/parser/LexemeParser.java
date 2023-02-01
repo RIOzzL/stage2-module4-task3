@@ -16,6 +16,10 @@ public class LexemeParser extends AbstractTextParser {
 
     private static final Pattern WORD_PATTER = Pattern.compile(WORD_REGEX);
 
+    public LexemeParser() {
+        super();
+    }
+
     public LexemeParser(AbstractTextParser nextParser) {
         super(nextParser);
     }

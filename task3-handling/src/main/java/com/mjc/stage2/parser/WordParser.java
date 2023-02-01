@@ -10,6 +10,10 @@ public class WordParser extends AbstractTextParser {
 
     private static final String WORD_REGEX = "\\w[\\w!=?():]+";
 
+    public WordParser() {
+        super();
+    }
+
     public WordParser(AbstractTextParser nextParser) {
         super(nextParser);
     }
